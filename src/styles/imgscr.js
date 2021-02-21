@@ -34,6 +34,6 @@ export default function screenshot(imgNode, format = 'png', quality = 0.97) {
 
 
 const img = document.getElementById('imgfilter')
-reset.onclick = function() {
+loadImage.onclick = function() {
   screenshot(img).download()
 }
