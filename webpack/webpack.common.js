@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     'js/index': Path.resolve(__dirname, '../src/js/index.js'),
     'js/filter': Path.resolve(__dirname, '../src/js/filter.js'),
-    'js/loadimage': Path.resolve(__dirname, '../src/js/loadimage.js'),
+    'js/app': Path.resolve(__dirname, '../src/js/app.js'),
     'css/index': Path.resolve(__dirname, '../src/scss/index.scss'),
   },
   output: {

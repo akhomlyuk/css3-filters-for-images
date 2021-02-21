@@ -20,6 +20,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "no-console": "off",
     "no-await-in-loop": "error",
     "no-compare-neg-zero": "error",
     "no-extra-parens": "error",
@@ -232,8 +233,8 @@
       "single"
     ],
     "require-jsdoc": "off",
-    "semi": [
-      "off"
+    "semi": [ 0,
+      "never"
     ],
     "semi-spacing": "error",
     "sort-keys": "off",
