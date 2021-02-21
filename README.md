@@ -1,3 +1,5 @@
+#:no_mobile_phones: :no_mobile_phones: :no_bicycles:
+
 ## Install and usage
 
 ```sh
