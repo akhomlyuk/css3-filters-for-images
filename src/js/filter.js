@@ -7,7 +7,7 @@ const invert = document.querySelector('#invert');
 const opacity = document.querySelector('#opacity');
 const blur = document.querySelector('#blur');
 
-const imgfilter = document.querySelector('#imgfilter')
+const imgfilter = document.querySelector('#imgfilter');
 
 grayscale.addEventListener('input', updateFilterValue);
 contrast.addEventListener('input', updateFilterValue);
@@ -17,11 +17,9 @@ saturate.addEventListener('input', updateFilterValue);
 invert.addEventListener('input', updateFilterValue);
 opacity.addEventListener('input', updateFilterValue);
 blur.addEventListener('input', updateFilterValue);
-  
 
 function updateFilterValue() {
-    
-    imgfilter.style.filter = `
+  imgfilter.style.filter = `
     grayscale(${grayscale.value}%)
     contrast(${contrast.value}%)
     brightness(${brightness.value}%)
@@ -30,5 +28,12 @@ function updateFilterValue() {
     invert(${invert.value}%)
     opacity(${opacity.value}%)
     blur(${blur.value}px)
-    `
+    `;
 }
+
+let bgcolor = document.querySelector('body');
+let bg = document.querySelector('#bgcolor-btn');
+
+bg.onclick = () => {
+  bgcolor.classList.toggle('red');
+};

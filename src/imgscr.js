@@ -26,14 +26,14 @@ export default function screenshot(imgNode, format = 'png', quality = 0.97) {
     then: (cb) => {
       cb(url)
     },
-    download: (name = 'image') => {
+    download: (name = 'picture') => {
       download(url, `${name}.${format}`)
     }
   }
 }
 
 
-const img = document.getElementById('imgfilter')
-reset.onclick = function() {
-  screenshot(img).download()
-}
+//const img = document.getElementById('imgfilter')
+//loadImage.onclick = function() {
+//  screenshot(img).download()
+//}

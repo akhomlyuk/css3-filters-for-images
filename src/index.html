@@ -21,10 +21,15 @@
 
 <body>
   <!-- Start your project here-->
+  <header id="header">
+    <div class="mx-auto p-3">
+      <button type="button" class="btn btn-warning" id="bgcolor-btn">Change bg color</button>
+    </div>
+  </header>
   <div class="container">
-    <div class="d-flex align-items-center" style="height: 100vh">
+    <div class="d-flex align-items-center m-3">
       <div class="img_box col-md-8">
-        <img class="img-fluid" src="styles/pic.jpg" id="imgfilter" alt="...">
+        <img class="img-fluid" src="img/pic.jpg" id="imgfilter" alt="...">
        <!-- <input type="text" id="picture_uri" class="form-control p-1 mt-2" value="https://mdbootstrap.com/img/new/standard/city/078.jpg"/> -->
       </div>
 
@@ -76,6 +81,8 @@
       </div>
 
     </div>
+
+
   </div>
   <!-- End your project here-->
 
@@ -84,7 +91,8 @@
 <script type="text/javascript" src="js/index.min.js"></script>
 <!-- Custom scripts -->
 
-<script type="module" src="styles/imgscr.js"></script>
-<script type="text/javascript" src="styles/filter.js"></script>
+<!-- <script type="module" src="js/imgscr.min.js"></script> -->
+<script type="module" src="js/loadimage.min.js"></script>
+<script type="text/javascript" src="js/filter.min.js"></script>
 
 </html>

@@ -1,13 +1,7 @@
 body {
-  background: linear-gradient(rgba(18, 102, 241, 0.35), rgba(18, 102, 241, 0.46));
+  height: 100vh;
+  background: linear-gradient(rgba(18, 102, 241, 0.35), rgba(18, 102, 241, 0.46)) repeat;
 }
-
-.mask-custom {
-    backdrop-filter: contrast(110%) brightness(110%) saturate(130%) sepia(0%) hue-rotate(142deg) grayscale(0%) invert(0%) blur(0px);
-    mix-blend-mode: screen;
-    background: rgba(243, 106, 188, 0.3);
-    opacity: 1;
-  }
 
 .controls_block label {
     font-weight: bold;
@@ -29,4 +23,7 @@ body {
   width: 100%;
     height: auto;
     margin-bottom: 1rem;
+}
+.red {
+  background: linear-gradient(rgba(218, 50, 252, 0.493), rgba(252, 102, 244, 0.46)) repeat;
 }
