@@ -12,8 +12,8 @@ body {
   }
 
 .img_box {
-    background:  rgba(197, 197, 197, 0.4);
-    padding: 10px;
+    /* background: rgb(244 67 54 / 20%); */
+    padding: 8px;
     box-shadow: 15px 1px 30px 0 rgb(0 0 0 / 30%), 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 30%);
     border-radius: 10px;
   }
@@ -22,6 +22,7 @@ body {
   width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    max-width: 550px;
 }
 .red {
   background: linear-gradient(rgba(218, 50, 252, 0.493), rgba(252, 102, 244, 0.46)) repeat;

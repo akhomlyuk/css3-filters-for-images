@@ -6,8 +6,8 @@ const saturate = document.querySelector('#saturate')
 const invert = document.querySelector('#invert')
 const opacity = document.querySelector('#opacity')
 const blur = document.querySelector('#blur')
-
 const imgfilter = document.querySelector('#imgfilter')
+const reset = document.querySelector('#reset')
 
 grayscale.addEventListener('input', updateFilterValue)
 contrast.addEventListener('input', updateFilterValue)
@@ -30,6 +30,7 @@ function updateFilterValue() {
     opacity(${opacity.value}%)
     blur(${blur.value}px) 
     `
+  reset.disabled = false
 }
 
 let label = document.getElementById('label')
@@ -63,3 +64,55 @@ window.addEventListener('load', () => {
     }
   })
 })
+
+const defaultValue = {
+  grayscale: 0,
+  contrast: 100,
+  brightness: 100,
+  sepia: 0,
+  saturate: 100,
+  invert: 0,
+  opacity: 100,
+  blur: 0,
+}
+
+// function resetValues() {
+//   imgfilter.style.filter = `
+//     grayscale(${0}%)
+//     contrast(${100}%)
+//     brightness(${100}%)
+//     sepia(${0}%)
+//     saturate(${100}%)
+//     invert(${0}%)
+//     opacity(${100}%)
+//     blur(${0}px)
+//     `
+// }
+reset.addEventListener('click', resetValues)
+
+function resetValues() {
+  grayscale.value = defaultValue.grayscale
+  contrast.value = defaultValue.contrast
+  sepia.value = defaultValue.sepia
+  brightness.value = defaultValue.brightness
+  saturate.value = defaultValue.saturate
+  invert.value = defaultValue.invert
+  opacity.value = defaultValue.opacity
+  blur.value = defaultValue.blur
+
+  imgfilter.style.filter = `
+  grayscale(${grayscale.value}%)
+  contrast(${contrast.value}%)
+  brightness(${brightness.value}%)
+  sepia(${sepia.value}%)
+  saturate(${saturate.value}%)
+  invert(${invert.value}%)
+  opacity(${opacity.value}%)
+  blur(${blur.value}px) 
+  `
+  label.innerHTML = `Grayscale ${grayscale.value}`
+
+  reset.disabled = true
+}
+
+// document.getElementById('reset').onclick = resetValues

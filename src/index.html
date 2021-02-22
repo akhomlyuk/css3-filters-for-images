@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!-- Start your project here-->
+  <!-- * Start your project here-->
   <header id="header">
     <div class="mx-auto p-1">
       <button type="button" class="btn btn-success" id="bgcolor-btn">Change bg color</button>
@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="controls_block col-sm-4 p-3"> 
+      <div class="controls_block img_box col-sm-4 p-3"> 
 
         <div class="controls">
           <label id="label" for="grayscale">Grayscale</label>
@@ -87,6 +87,7 @@
         <div class="controls">
         <label for="opacity">Opacity</label>
         <input type="range" class="form-range" min="0" max="100" value="100" id="opacity">
+        <button type="button" class="btn btn-success" id="reset" disabled>Reset</button>
         </div>
 
       </div>
@@ -94,8 +95,14 @@
     </div>
 
   </div>
+  <footer>
+    <div align="center"> 
+      <p>Coded with <i class="fa fa-heart" style="color:rgb(211, 0, 0)"></i>
+        Framework - <img src="img/vanilla.png" alt="">
+      </p>
+    </div>
+  </footer>
   <!-- End your project here-->
-
 </body>
 <!-- Main js file -->
 <script type="text/javascript" src="js/index.min.js"></script>
