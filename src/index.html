@@ -22,17 +22,29 @@
 <body>
   <!-- Start your project here-->
   <header id="header">
-    <div class="mx-auto p-3">
-      <button type="button" class="btn btn-warning" id="bgcolor-btn">Change bg color</button>
+    <div class="mx-auto p-1">
+      <button type="button" class="btn btn-success" id="bgcolor-btn">Change bg color</button>
     </div>
-    <div class="mx-auto p-3">
-      <button type="button" class="btn btn-warning" id="input-value">Input value</button>
+    <div class="mx-auto p-1">
+      <button type="button" class="btn btn-success" id="input-value">Input value</button>
     </div>
   </header>
   <div class="container">
     <div class="m-3 d-flex align-items-center">
       <div class="img_box col-12 col-sm-8">
         <img class="img-fluid" src="img/pic.jpg" id="imgfilter" alt="...">
+
+        <div class="mx-auto p-1">
+          <button type="button" class="btn btn-primary btn-sm" style="cursor: pointer;">
+          <label style="cursor: pointer;"> <i style="cursor: pointer;" class="fa fa-upload p-2" aria-hidden="true"></i>Upload image
+          <input class="btn btn-danger btn-file" style="display: none;" type="file" accept=".jpg,.jpeg,.png" id="upload">
+        </label>
+      </button>
+      </div>
+
+        <div class="loadImage mx-auto p-1">
+          <button id="loadImage" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-download p-2"></i></i>Download image</button>
+        </div>
       </div>
 
       <div class="controls_block col-sm-4 p-3"> 
@@ -77,9 +89,7 @@
         <input type="range" class="form-range" min="0" max="100" value="100" id="opacity">
         </div>
 
-        <div class="loadImage d-grid mx-auto">
-          <button id="loadImage" type="button" class="btn btn-danger"><i class="fas fa-download p-2"></i></i>Download image</button>
-        </div>
+        
       </div>
 
     </div>

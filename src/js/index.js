@@ -3,6 +3,7 @@ import screenshot from 'image-screenshot'
 
 const img = document.getElementById('imgfilter')
 const loadImage = document.getElementById('loadImage')
+// let base64 = document.getElementById('base64')
 
 loadImage.onclick = function () {
   screenshot(img).download()
