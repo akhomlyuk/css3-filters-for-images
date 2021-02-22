@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(18, 102, 241, 0.35), rgba(18, 102, 241, 0.46)) repeat;
+}
+
+.controls_block label {
+    font-weight: bold;
+    color: #0d6efd;
+  }
+.controls {
+    padding: 2px;
+  }
+
+.img_box {
+    /* background: rgb(244 67 54 / 20%); */
+    padding: 8px;
+    box-shadow: 15px 1px 30px 0 rgb(0 0 0 / 30%), 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 30%);
+    border-radius: 10px;
+  }
+
+.image{
+  width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    max-width: 550px;
+}
+.red {
+  background: linear-gradient(rgba(218, 50, 252, 0.493), rgba(252, 102, 244, 0.46)) repeat;
+}

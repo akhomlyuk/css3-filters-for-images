@@ -76,18 +76,6 @@ const defaultValue = {
   blur: 0,
 }
 
-// function resetValues() {
-//   imgfilter.style.filter = `
-//     grayscale(${0}%)
-//     contrast(${100}%)
-//     brightness(${100}%)
-//     sepia(${0}%)
-//     saturate(${100}%)
-//     invert(${0}%)
-//     opacity(${100}%)
-//     blur(${0}px)
-//     `
-// }
 reset.addEventListener('click', resetValues)
 
 function resetValues() {
@@ -114,5 +102,3 @@ function resetValues() {
 
   reset.disabled = true
 }
-
-// document.getElementById('reset').onclick = resetValues

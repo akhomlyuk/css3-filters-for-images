@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>CSS3 image filters</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- Main css file -->
+  <link rel="stylesheet" href="css/index.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <style></style>
+</head>
+
+<body>
+  <!-- * Start your project here-->
+  <header id="header">
+    <div class="mx-auto p-1">
+      <button type="button" class="btn btn-success" id="bgcolor-btn">Change bg color</button>
+    </div>
+    <div class="mx-auto p-1">
+      <button type="button" class="btn btn-success" id="input-value">Input value</button>
+    </div>
+  </header>
+  <div class="container">
+    <div class="m-3 d-flex align-items-center">
+      <div class="img_box col-12 col-sm-8">
+        <img class="img-fluid" src="img/pic.jpg" id="imgfilter" alt="...">
+
+        <div class="mx-auto p-1">
+          <button type="button" class="btn btn-primary btn-sm" style="cursor: pointer;">
+          <label style="cursor: pointer;"> <i style="cursor: pointer;" class="fa fa-upload p-2" aria-hidden="true"></i>Upload image
+          <input class="btn btn-danger btn-file" style="display: none;" type="file" accept=".jpg,.jpeg,.png" id="upload">
+        </label>
+      </button>
+      </div>
+
+        <div class="loadImage mx-auto p-1">
+          <button id="loadImage" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-download p-2"></i></i>Download image</button>
+        </div>
+      </div>
+
+      <div class="controls_block img_box col-sm-4 p-3"> 
+
+        <div class="controls">
+          <label id="label" for="grayscale">Grayscale</label>
+          <input type="range" class="form-range" min="0" max="100" value="0" id="grayscale">
+      </div>
+
+      <div class="controls">
+        <label for="sepia">Sepia</label>
+        <input type="range" class="form-range" min="0" max="100" value="0" id="sepia">
+        </div>
+
+        <div class="controls">
+          <label for="blur">Blur</label>
+        <input type="range" class="form-range" min="0" max="20" value="0" id="blur">
+        </div>
+      
+        <div class="controls">
+        <label for="contrast">Contrast</label>
+        <input type="range" class="form-range" min="0" max="200" value="100" id="contrast">
+        </div>
+        
+        <div class="controls">
+          <label for="saturate">Saturate</label>
+        <input type="range" class="form-range" min="0" max="200" value="100" id="saturate">
+        </div>
+
+        <div class="controls">
+        <label for="brightness">Brightness</label>
+        <input type="range" class="form-range" min="0" max="200" value="100" id="brightness">
+        </div>
+
+        <div class="controls">
+          <label for="invert">Invert</label>
+        <input type="range" class="form-range" min="0" max="100" value="0" id="invert">
+        </div>
+      
+        <div class="controls">
+        <label for="opacity">Opacity</label>
+        <input type="range" class="form-range" min="0" max="100" value="100" id="opacity">
+        <button type="button" class="btn btn-success" id="reset" disabled>Reset</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <footer>
+    <div align="center"> 
+      <p>Coded with <i class="fa fa-heart" style="color:rgb(211, 0, 0)"></i>
+        Framework - <img src="img/vanilla.png" alt="">
+      </p>
+    </div>
+  </footer>
+  <!-- End your project here-->
+</body>
+<!-- Main js file -->
+<script type="text/javascript" src="js/index.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/filter.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+</html>
