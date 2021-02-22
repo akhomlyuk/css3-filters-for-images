@@ -1,4 +1,4 @@
-# :no_mobile_phones: :no_mobile_phones: :no_bicycles:
+## :no_mobile_phones: :no_mobile_phones: :no_bicycles:
 
 ## Install and usage
 
@@ -21,4 +21,4 @@ npm run build
 
 ## Thx
 
-### Bootstrap 5 & Material Design 2.0 UI KIT and **[>> image-screenshot](https://github.com/cyan33/image-screenshot)**
+### Bootstrap 5 & Material Design 2.0 UI KIT and **[image-screenshot](https://github.com/cyan33/image-screenshot)**
