@@ -1,4 +1,4 @@
-## :no_mobile_phones: :no_mobile_phones: :no_bicycles:
+## Demo: https://akhomlyuk.github.io/css3-filters/
 
 ## Install and usage
 
